@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from '@/views/Dashboard.vue'
 const Pumpstation = () => import('@/views/pumpstation/index.vue')
 const Pumprun = () => import('@/views/pumprun/index.vue')
+const PumprunDetail = () => import('@/views/pumprun/detail.vue')
 const Drainpipe = () => import('@/views/drainpipe/index.vue')
 const Manhole = () => import('@/views/manhole/index.vue')
 const Dredge = () => import('@/views/dredge/index.vue')
@@ -26,6 +27,7 @@ const router = createRouter({
     { path: '/', name: 'dashboard', component: Dashboard },
     { path: '/pumpstation', name: 'pumpstation', component: Pumpstation },
     { path: '/pumprun', name: 'pumprun', component: Pumprun },
+    { path: '/pumprun/:id', name: 'pumprun-detail', component: PumprunDetail },
     { path: '/drainpipe', name: 'drainpipe', component: Drainpipe },
     { path: '/manhole', name: 'manhole', component: Manhole },
     { path: '/dredge', name: 'dredge', component: Dredge },

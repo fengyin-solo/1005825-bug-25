@@ -35,3 +35,31 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.legend-limit { background: #fff7ed; color: #9a3412; }
+.row-over-limit { background: #fef2f2; }
+.row-over-limit td { border-color: #f3b4ad; }
+.verdict-danger { color: #b42318; font-weight: 600; }
+.verdict-ok { color: #157347; }
+.verdict-warn { color: #b45309; font-weight: 600; }
+.stat-danger { color: #b42318; }
+.cell-tip { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.link-disabled { color: #9aa4b2; cursor: not-allowed; font-size: 13px; text-decoration: line-through; }
+.ok-text { color: #157347; }
+.alert-banner { display: flex; flex-direction: column; gap: 4px; border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; font-size: 13px; border: 1px solid; }
+.alert-danger { background: #fef2f2; border-color: #f3b4ad; color: #b42318; }
+.alert-warn { background: #fffbeb; border-color: #fcd34d; color: #92400e; }
+.alert-ok { background: #f0fdf4; border-color: #86efac; color: #166534; }
+.alert-meta { color: var(--muted); font-size: 12px; }
+.detail-table th { width: 160px; background: #f8fafc; }
+.detail-actions { display: flex; gap: 8px; margin-top: 12px; }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal-card { background: #fff; border-radius: 10px; padding: 18px 20px; width: 420px; max-width: calc(100vw - 32px); display: flex; flex-direction: column; gap: 10px; }
+.modal-card h3 { margin: 0; }
+.form-item { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.form-item input { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; }
+.form-tip { color: var(--muted); }
+.form-verdict { font-size: 13px; border-radius: 6px; padding: 6px 8px; background: #f8fafc; }
+.form-verdict.verdict-danger { background: #fef2f2; }
+.form-verdict.verdict-ok { background: #f0fdf4; }
+.form-verdict.verdict-warn { background: #fffbeb; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
